@@ -32,7 +32,6 @@ License for this project: GNU GPLv3
 
 ## Contributing
 
-### Steps
 1. Fork/Clone this repo
 2. Hack away!
 3. Create a new pull request
