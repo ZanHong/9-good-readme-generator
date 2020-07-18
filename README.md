@@ -38,10 +38,18 @@ License for this project: GNU GPLv3
 
 ## Testing
 
-${data.test}
+Run app and look for sampleREADME.md in ./Develop folder 
+
+![highlight license list](./Develop/Images/highlighting-license-list.PNG)
+
+![terminal input](./Develop/Images/terminal-input.PNG)
+
+![generated readme](./Develop/Images/readme.PNG)
+
+![application demo](./Develop/Images/demo.gif)
 
 ## Questions
 
 If you have any questions/doubts, feel free to contact me via:
-* GitHub: [https://github.com/${data.username}](https://github.com/${data.username})
-* Email: [${data.email}](mailto:${data.email})
+* GitHub: [https://github.com/ZanHong](https://github.com/ZanHong)
+* Email: [mokzanhong92@hotmail.com](mailto:mokzanhong92@hotmail.com)
