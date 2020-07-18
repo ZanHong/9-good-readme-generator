@@ -43,12 +43,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "How to test your code",
+        message: "How to test your code?",
         name: "test"
     },
     {
         type: "input",
-        message: "What is your username?",
+        message: "What is your GutHub username?",
         name: "username"
     },
     {
@@ -60,17 +60,17 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-
+    writeFileAsync(fileName, data)
+        .then(() => console.log("Success! Please navigate to ./Develop folder and look for sampleREADME.md"));
 }
 
 // function to initialize program
 async function init() {
     try {
-        inquirer
-            .prompt(questions)
-            .then(function ({ title, description, installation, usage, license, contribution, test, username, email }) {
-                const readme = markDownGenerator(data);
-            })
+        const data = await inquirer.prompt(questions)
+        const readme = markDownGenerator(data);
+
+        await writeToFile("sampleREADME.md", readme);
     } catch (err) {
         console.log(err);
     }
